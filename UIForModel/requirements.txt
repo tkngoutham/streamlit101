@@ -1,0 +1,8 @@
+streamlit
+scikit-learn
+pandas
+matplotlib
+numpy==1.20     
+pyqt5==5.10
+pyqtwebengine==5.12
+daal==2021.4.0
