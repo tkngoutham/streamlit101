@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import confusion_matrix
 import matplotlib.pyplot as plt
 # Reading dataset
-train_df = pd.read_csv("./titanic_dataset/titanic.csv")
+train_df = pd.read_csv("./datasets/titanic.csv")
 
 def manipulate_df(df):
     # Update sex column to numerical
@@ -51,7 +51,7 @@ elif p_class == 'Second Class':
     s_class = 1
 else:
     t_class = 1
-    
+
 input_data = scaler.transform([[sex , age, f_class , s_class, t_class]])
 prediction = model.predict(input_data)
 predict_probability = model.predict_proba(input_data)
